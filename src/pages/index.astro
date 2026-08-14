@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SparkX: AI &amp; IT — Kerala Startup Mission</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap"
+  rel="stylesheet"
+>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script is:inline>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        space: ['Space Grotesk', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'monospace'],
+      },
+      keyframes: {
+        scroll: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' }
+        }
+      },
+      animation: {
+        scroll: 'scroll 28s linear infinite'
+      }
+    }
+  }
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".page-scroll").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute("href"));
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+        // Remove the hash from the URL
+        history.replaceState({}, "", window.location.pathname);
+      }
+    });
+  });
+});
+</script>
+</head>
+<body class="m-0 box-border bg-[#fff] font-inter text-[#0B1220] antialiased selection:bg-[#C7D2FB] selection:text-[#0B1220] [&_*]:box-border [&_a]:text-inherit [&_a]:no-underline [&_a:focus-visible]:rounded-[4px] [&_a:focus-visible]:outline [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-[#FF7A29] [&_a:focus-visible]:outline-offset-[3px] [&_button:focus-visible]:rounded-[4px] [&_button:focus-visible]:outline [&_button:focus-visible]:outline-2 [&_button:focus-visible]:outline-[#FF7A29] [&_button:focus-visible]:outline-offset-[3px] [&_summary:focus-visible]:rounded-[4px] [&_summary:focus-visible]:outline [&_summary:focus-visible]:outline-2 [&_summary:focus-visible]:outline-[#FF7A29] [&_summary:focus-visible]:outline-offset-[3px]">
+
+<!-- ======================================================== -->
+<!-- NAVBAR -->
+<!-- ======================================================== -->
+<div class="sticky top-0 z-50 border-b border-[rgba(11,18,32,0.10)] bg-[rgba(255,255,255,0.9)] backdrop-blur-[10px]">
+  <div class="mx-auto flex max-w-[1180px] items-center justify-between px-8 py-5">
+    <div class="flex items-center gap-[10px]">
+      <img src="/img/logo.svg" class="w-20">
+      <img src="/img/2026/sparkx1.svg" class="w-20">
+    </div>
+    <nav class="hidden items-center gap-7 min-[861px]:flex">
+      <a href="#what" class="page-scroll text-[14px] font-medium text-[#4A5372] hover:text-[#0B1220]">About</a>
+      <a href="#who" class="page-scroll text-[14px] font-medium text-[#4A5372] hover:text-[#0B1220]">Who should apply</a>
+      <a href="#program" class="page-scroll text-[14px] font-medium text-[#4A5372] hover:text-[#0B1220]">Program</a>
+      <a href="#dates" class="page-scroll text-[14px] font-medium text-[#4A5372] hover:text-[#0B1220]">Timeline</a>
+      <a href="#faq" class="page-scroll text-[14px] font-medium text-[#4A5372] hover:text-[#0B1220]">FAQ</a>
+    </nav>
+    <a href="https://zfrmz.com/MwpDRlCKA6wXMiHLkOom" target="_blank"   class="inline-flex cursor-pointer items-center gap-2 rounded-[100px] bg-[#FF7A29] px-7 py-[15px] text-[14.5px] font-semibold text-white shadow-[0_10px_24px_rgba(255,122,41,0.32)] transition-transform duration-150 hover:-translate-y-[2px]">Apply Now</a>
+  </div>
+</div>
+
+<!-- ======================================================== -->
+<!-- HERO -->
+<!-- ======================================================== -->
+<section class="relative overflow-hidden bg-[radial-gradient(120%_140%_at_15%_0%,#4A6BF5_0%,#2F54EB_45%,#0B1130_100%)] pt-20 text-white">
+  <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(circle_at_30%_20%,black,transparent_72%)]"></div>
+
+  <div class="relative z-[2] mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-[50px] px-8 pb-[70px] min-[861px]:grid-cols-[1.15fr_0.85fr]">
+    <div>
+      <div class="mb-[26px] inline-flex items-center gap-2 rounded-[100px] border border-[rgba(255,255,255,0.22)] bg-[rgba(255,255,255,0.12)] px-[14px] py-[7px] font-mono text-[12px] tracking-[0.08em] text-white">
+        <span class="h-[6px] w-[6px] rounded-full bg-[#FF7A29]"></span>
+        PREINCUBATION COHORT · AI &amp; IT
+      </div>
+      <h1 class="font-space text-[34px] font-bold leading-[1.1] tracking-[-0.02em] min-[861px]:text-[52px]">
+        A structured 45-day path from idea to
+        <span class="text-[#FF7A29]">venture-ready pitch.</span>
+      </h1>
+      <p class="mb-8 mt-6 max-w-[500px] text-[16.5px] leading-[1.6] text-[rgba(255,255,255,0.8)]">
+        SparkX: AI &amp; IT is Kerala Startup Mission's preincubation program for students and first-time founders building technology-driven ideas — combining weekly masterclasses and hands-on guidance to take a raw idea to a validated pitch.
+      </p>
+      <div class="mb-11 flex flex-wrap gap-[14px]">
+        <a href="https://zfrmz.com/MwpDRlCKA6wXMiHLkOom" target="_blank"   class="inline-flex cursor-pointer items-center gap-2 rounded-[100px] bg-[#FF7A29] px-7 py-[15px] text-[14.5px] font-semibold text-white shadow-[0_10px_24px_rgba(255,122,41,0.32)] transition-transform duration-150 hover:-translate-y-[2px]">Apply Now</a>
+        <a href="#program" class="inline-flex cursor-pointer items-center gap-2 rounded-[100px] border-[1.5px] border-[rgba(255,255,255,0.14)] px-7 py-[15px] text-[14.5px] font-semibold text-white transition-transform duration-150 hover:-translate-y-[2px]">See the 45-day path →</a>
+      </div>
+      <div class="flex gap-[38px]">
+        <div>
+          <b class="block font-space text-[26px] text-white">45</b>
+          <span class="font-mono text-[10.5px] uppercase tracking-[0.06em] text-[rgba(255,255,255,0.6)]">Day program</span>
+        </div>
+        <div>
+          <b class="block font-space text-[26px] text-white">5</b>
+          <span class="font-mono text-[10.5px] uppercase tracking-[0.06em] text-[rgba(255,255,255,0.6)]">Masterclasses</span>
+        </div>
+        <div>
+          <b class="block font-space text-[26px] text-white">2</b>
+          <span class="font-mono text-[10.5px] uppercase tracking-[0.06em] text-[rgba(255,255,255,0.6)]">Offline sessions</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- RADIAL STAT CLUSTER (replaces ring) -->
+    <!-- ======================================================== -->
+    <div class="flex items-center justify-center">
+      <div class="relative h-[320px] w-[320px]">
+
+        <div class="absolute inset-0 rounded-full border border-dashed border-white/20"></div>
+
+        <svg class="absolute inset-0 h-full w-full" viewBox="0 0 320 320" fill="none">
+          <line x1="160" y1="160" x2="160" y2="14" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+          <line x1="160" y1="160" x2="286" y2="233" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+          <line x1="160" y1="160" x2="34" y2="233" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" />
+        </svg>
+
+        <div class="absolute inset-0 animate-[spin_12s_linear_infinite] motion-reduce:animate-none">
+          <span class="absolute -top-[1px] left-1/2 -ml-[5px] h-[10px] w-[10px] rounded-full bg-[#FF7A29] shadow-[0_0_14px_rgba(255,122,41,0.8)]"></span>
+        </div>
+
+        <div class="absolute left-1/2 top-1/2 z-10 flex h-[140px] w-[140px] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm">
+          <b class="font-space text-[42px] font-bold leading-none text-white animate-pulse motion-reduce:animate-none">45</b>
+          <span class="mt-1 font-mono text-[11px] tracking-[0.1em] text-white/60">DAYS</span>
+        </div>
+
+        <div class="absolute left-[160px] top-[14px] z-10 flex -translate-x-1/2 -translate-y-1/2 items-center gap-2 rounded-full bg-[#FF7A29] px-4 py-2 shadow-[0_10px_20px_rgba(255,122,41,0.35)]">
+          <!-- <span class="font-space text-[15px] font-bold text-white">5</span> -->
+          <span class="font-mono text-[10px] text-white/90">Masterclasses</span>
+        </div>
+
+        <div class="absolute left-[286px] top-[233px] z-10 flex -translate-x-1/2 -translate-y-1/2 items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 backdrop-blur-sm">
+          <!-- <span class="font-space text-[15px] font-bold text-white">2</span> -->
+          <span class="font-mono text-[10px] text-white/70">Offline sessions</span>
+        </div>
+
+        <div class="absolute left-[34px] top-[233px] z-10 flex -translate-x-1/2 -translate-y-1/2 items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 backdrop-blur-sm">
+          <!-- <span class="font-space text-[15px] font-bold text-white">1</span> -->
+          <span class="font-mono text-[10px] text-white/70">Demo Day</span>
+        </div>
+
+      </div>
+    </div>
+    <!-- ======================================================== -->
+    <!-- END RADIAL STAT CLUSTER -->
+    <!-- ======================================================== -->
+
+  </div>
+
+  <!-- ticker -->
+  <div class="relative z-[2] overflow-hidden border-t border-[rgba(255,255,255,0.14)] bg-[#0B1130] py-[14px]">
+    <div class="flex w-max animate-scroll whitespace-nowrap motion-reduce:animate-none">
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">FREE TO APPLY</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">SOLO OR TEAMS OF 4</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">45-DAY COHORT</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">KSUM PRACTITIONERS</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">DEMO DAY</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">PRE-COMPANY WELCOME</span>
+      <!-- duplicate -->
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">FREE TO APPLY</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">SOLO OR TEAMS OF 4</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">45-DAY COHORT</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">KSUM PRACTITIONERS</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">DEMO DAY</span>
+      <span class="flex items-center gap-[22px] px-[22px] font-mono text-[12px] font-semibold tracking-[0.03em] text-[rgba(255,255,255,0.72)] after:text-[8px] after:text-[#FF7A29] after:content-['◆']">PRE-COMPANY WELCOME</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- WHAT IS SPARKX -->
+<!-- ======================================================== -->
+<section id="what" class="bg-[#F5F6FB] py-[110px]">
+  <div class="relative mx-auto max-w-[1180px] px-8 pt-[10px]">
+    <div class="absolute right-0 top-[-40px] z-0 hidden font-space text-[240px] font-bold leading-none text-[#2F54EB] opacity-[0.06] min-[861px]:block">01</div>
+    <div class="mb-5 flex items-center gap-[10px]">
+      <span class="h-[3px] w-7 rounded-[2px] bg-[#2F54EB]"></span>
+      <span class="font-mono text-[12px] font-semibold uppercase tracking-[0.1em] text-[#4A5372]">WHAT IS SPARKX</span>
+    </div>
+    <h2 class="max-w-[600px] font-space text-[34px] font-bold leading-[1.22] tracking-[-0.02em]">A structured way to test an AI or IT idea.</h2>
+    <div class="relative z-[1] mt-[34px] grid grid-cols-1 gap-[70px] min-[861px]:grid-cols-2">
+      <div>
+        <p class="mb-4 text-[15.5px] leading-[1.7] text-[#4A5372]">SparkX is designed for individuals with a technology-driven problem worth solving, but without a structured way, yet, to validate it. It gives that idea a defined 45-day process rather than leaving it to chance.</p>
+        <p class="mb-4 text-[15.5px] leading-[1.7] text-[#4A5372]">The program closes with a Demo Day where participants present the concept they've validated over the 45 days.</p>
+        <div class="mt-[34px] flex gap-9 border-t border-[rgba(11,18,32,0.10)] pt-7">
+          <div>
+            <b class="block font-space text-[28px] text-[#2F54EB]">5</b>
+            <span class="font-mono text-[11px] text-[#4A5372]">MASTERCLASSES</span>
+          </div>
+          <div>
+            <b class="block font-space text-[28px] text-[#2F54EB]">2</b>
+            <span class="font-mono text-[11px] text-[#4A5372]">OFFLINE SESSIONS</span>
+          </div>
+          <div>
+            <b class="block font-space text-[28px] text-[#2F54EB]">1</b>
+            <span class="font-mono text-[11px] text-[#4A5372]">DEMO DAY</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-4 text-[15.5px] leading-[1.7] text-[#4A5372]">Participants move through weekly online masterclasses and two mandatory offline sessions, delivered by practitioners from KSUM, covering:</p>
+        <div class="mt-[22px] flex flex-wrap gap-[10px]">
+          <span class="rounded-[100px] border-[1.5px] border-[#C7D2FB] bg-[#EEF1FE] px-4 py-[9px] font-mono text-[12.5px] text-[#2F54EB]">Idea validation</span>
+          <span class="rounded-[100px] border-[1.5px] border-[#C7D2FB] bg-[#EEF1FE] px-4 py-[9px] font-mono text-[12.5px] text-[#2F54EB]">Market sizing</span>
+          <span class="rounded-[100px] border-[1.5px] border-[#C7D2FB] bg-[#EEF1FE] px-4 py-[9px] font-mono text-[12.5px] text-[#2F54EB]">Technical feasibility</span>
+          <span class="rounded-[100px] border-[1.5px] border-[#C7D2FB] bg-[#EEF1FE] px-4 py-[9px] font-mono text-[12.5px] text-[#2F54EB]">Early product thinking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- WHO SHOULD APPLY -->
+<!-- ======================================================== -->
+<section id="who" class="py-[110px]">
+  <div class="mx-auto max-w-[1180px] px-8">
+    <div class="mb-5 flex items-center gap-[10px]">
+      <span class="h-[3px] w-7 rounded-[2px] bg-[#2F54EB]"></span>
+      <span class="font-mono text-[12px] font-semibold uppercase tracking-[0.1em] text-[#4A5372]">WHO SHOULD APPLY</span>
+    </div>
+    <h2 class="max-w-[600px] font-space text-[34px] font-bold leading-[1.22] tracking-[-0.02em]">Built for people closer to an idea than a company.</h2>
+  </div>
+  <div class="mx-auto max-w-[1180px] px-8">
+    <div class="border-t border-[rgba(11,18,32,0.10)] py-11">
+      <div class="grid grid-cols-1 gap-[30px] min-[861px]:grid-cols-[150px_1fr]">
+        <div class="font-space text-[60px] font-bold leading-none text-[#2F54EB] opacity-[0.10] min-[861px]:text-[96px]">01</div>
+        <div>
+          <div class="mb-[14px] h-1 w-[34px] rounded-[2px] bg-[#2F54EB]"></div>
+          <h3 class="mb-[10px] font-space text-[22px] font-bold tracking-[-0.02em]">Students &amp; recent graduates</h3>
+          <p class="max-w-[600px] text-[15px] leading-[1.7] text-[#4A5372]">Working on an AI or software idea alongside coursework, an IEDC project, or a hackathon build worth pursuing further.</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-[rgba(11,18,32,0.10)] py-11">
+      <div class="grid grid-cols-1 gap-[30px] min-[861px]:grid-cols-[150px_1fr]">
+        <div class="font-space text-[60px] font-bold leading-none text-[#2F54EB] opacity-[0.10] min-[861px]:text-[96px]">02</div>
+        <div>
+          <div class="mb-[14px] h-1 w-[34px] rounded-[2px] bg-[#2F54EB]"></div>
+          <h3 class="mb-[10px] font-space text-[22px] font-bold tracking-[-0.02em]">First-time founders</h3>
+          <p class="max-w-[600px] text-[15px] leading-[1.7] text-[#4A5372]">Building your first company — solo or with a small team — and looking for a structured way to test the idea before taking it further.</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-y border-[rgba(11,18,32,0.10)] py-11">
+      <div class="grid grid-cols-1 gap-[30px] min-[861px]:grid-cols-[150px_1fr]">
+        <div class="font-space text-[60px] font-bold leading-none text-[#2F54EB] opacity-[0.10] min-[861px]:text-[96px]">03</div>
+        <div>
+          <div class="mb-[14px] h-1 w-[34px] rounded-[2px] bg-[#2F54EB]"></div>
+          <h3 class="mb-[10px] font-space text-[22px] font-bold tracking-[-0.02em]">Technical builders</h3>
+          <p class="max-w-[600px] text-[15px] leading-[1.7] text-[#4A5372]">Engineers or product people with a working prototype or model who need support turning it into a viable, market-facing venture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- PROGRAM -->
+<!-- ======================================================== -->
+<section  class="bg-[#F5F6FB] py-[110px] hidden">
+  <div class="mx-auto max-w-[1180px] px-8">
+    <div class="mb-5 flex items-center gap-[10px]">
+      <span class="h-[3px] w-7 rounded-[2px] bg-[#2F54EB]"></span>
+      <span class="font-mono text-[12px] font-semibold uppercase tracking-[0.1em] text-[#4A5372]">PROGRAM STRUCTURE</span>
+    </div>
+    <h2 class="max-w-[600px] font-space text-[34px] font-bold leading-[1.22] tracking-[-0.02em]">A fixed 45-day sequence. Five sessions, each followed by a hands-on activity block, culminating in Demo Day.</h2>
+
+    <div class="mt-[54px] overflow-x-auto pb-[10px]">
+      <div class="flex min-w-[760px] items-center px-[6px]">
+        <div class="relative flex w-16 shrink-0 flex-col items-center">
+          <div class="z-[2] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#2F54EB] shadow-[0_0_0_2px_#2F54EB]"></div>
+          <div class="absolute bottom-8 w-[150px] text-center text-[12.5px]">
+            <b class="block font-space text-[13.5px] text-[#0B1220]">S1</b>
+            <span class="font-mono text-[10.5px] text-[#4A5372]">Day 1</span>
+          </div>
+        </div>
+        <div class="h-1 flex-1 rounded-[2px] bg-[#C7D2FB]"></div>
+        <div class="relative flex w-16 shrink-0 flex-col items-center">
+          <div class="z-[2] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#2F54EB] shadow-[0_0_0_2px_#2F54EB]"></div>
+          <div class="absolute top-8 w-[150px] text-center text-[12.5px]">
+            <b class="block font-space text-[13.5px] text-[#0B1220]">S2</b>
+            <span class="font-mono text-[10.5px] text-[#4A5372]">Day 7</span>
+          </div>
+        </div>
+        <div class="h-1 flex-1 rounded-[2px] bg-[#C7D2FB]"></div>
+        <div class="relative flex w-16 shrink-0 flex-col items-center">
+          <div class="z-[2] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#2F54EB] shadow-[0_0_0_2px_#2F54EB]"></div>
+          <div class="absolute bottom-8 w-[150px] text-center text-[12.5px]">
+            <b class="block font-space text-[13.5px] text-[#0B1220]">S3</b>
+            <span class="font-mono text-[10.5px] text-[#4A5372]">Day 13</span>
+          </div>
+        </div>
+        <div class="h-1 flex-1 rounded-[2px] bg-[#C7D2FB]"></div>
+        <div class="relative flex w-16 shrink-0 flex-col items-center">
+          <div class="z-[2] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#2F54EB] shadow-[0_0_0_2px_#2F54EB]"></div>
+          <div class="absolute top-8 w-[150px] text-center text-[12.5px]">
+            <b class="block font-space text-[13.5px] text-[#0B1220]">S4</b>
+            <span class="font-mono text-[10.5px] text-[#4A5372]">Day 22</span>
+          </div>
+        </div>
+        <div class="h-1 flex-1 rounded-[2px] bg-[#C7D2FB]"></div>
+        <div class="relative flex w-16 shrink-0 flex-col items-center">
+          <div class="z-[2] h-[18px] w-[18px] rounded-full border-[3px] border-white bg-[#2F54EB] shadow-[0_0_0_2px_#2F54EB]"></div>
+          <div class="absolute bottom-8 w-[150px] text-center text-[12.5px]">
+            <b class="block font-space text-[13.5px] text-[#0B1220]">S5</b>
+            <span class="font-mono text-[10.5px] text-[#4A5372]">Day 30</span>
+          </div>
+        </div>
+        <div class="h-1 flex-1 rounded-[2px] bg-[#C7D2FB]"></div>
+        <div class="relative flex w-16 shrink-0 flex-col items-center">
+          <div class="z-[2] h-[22px] w-[22px] rounded-full border-[3px] border-white bg-[#FF7A29] shadow-[0_0_0_2px_#FF7A29]"></div>
+          <div class="absolute top-8 w-[150px] text-center text-[12.5px]">
+            <b class="block font-space text-[13.5px] text-[#0B1220]">Demo Day</b>
+            <span class="font-mono text-[10.5px] text-[#4A5372]">Day 45</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-14 flex flex-wrap gap-[14px]">
+      <div class="flex items-center gap-[10px] rounded-[100px] bg-[#F5F6FB] py-[9px] pl-[10px] pr-4">
+        <span class="rounded-[100px] bg-[#2F54EB] px-[9px] py-1 font-mono text-[10.5px] text-white">A1</span>
+        <span class="text-[12.5px] text-[#4A5372]">Day 2–6 · following Breaking the Convention</span>
+      </div>
+      <div class="flex items-center gap-[10px] rounded-[100px] bg-[#F5F6FB] py-[9px] pl-[10px] pr-4">
+        <span class="rounded-[100px] bg-[#2F54EB] px-[9px] py-1 font-mono text-[10.5px] text-white">A2</span>
+        <span class="text-[12.5px] text-[#4A5372]">Day 8–12 · following Emerging/Future IT–AI Opportunity Spaces</span>
+      </div>
+      <div class="flex items-center gap-[10px] rounded-[100px] bg-[#F5F6FB] py-[9px] pl-[10px] pr-4">
+        <span class="rounded-[100px] bg-[#2F54EB] px-[9px] py-1 font-mono text-[10.5px] text-white">A3</span>
+        <span class="text-[12.5px] text-[#4A5372]">Day 14–20 · following Idea Validation Without Building the Product</span>
+      </div>
+      <div class="flex items-center gap-[10px] rounded-[100px] bg-[#F5F6FB] py-[9px] pl-[10px] pr-4">
+        <span class="rounded-[100px] bg-[#2F54EB] px-[9px] py-1 font-mono text-[10.5px] text-white">A4</span>
+        <span class="text-[12.5px] text-[#4A5372]">Day 23 onwards · following How to Build — Team, Patience, Collaboration</span>
+      </div>
+      <div class="flex items-center gap-[10px] rounded-[100px] bg-[#F5F6FB] py-[9px] pl-[10px] pr-4">
+        <span class="rounded-[100px] bg-[#2F54EB] px-[9px] py-1 font-mono text-[10.5px] text-white">A5</span>
+        <span class="text-[12.5px] text-[#4A5372]">Day 31–44 · following Market Reality — Competition &amp; Unfamiliar Terrain</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="program" class="bg-[#F5F6FB] py-[110px]">
+  <div class="mx-auto max-w-[1180px] px-8">
+    <div class="mb-5 flex items-center gap-[10px]">
+      <span class="h-[3px] w-7 rounded-[2px] bg-[#2F54EB]"></span>
+      <span class="font-mono text-[12px] font-semibold uppercase tracking-[0.1em] text-[#4A5372]">PROGRAM STRUCTURE</span>
+    </div>
+    <h2 class="max-w-[600px] font-space text-[34px] font-bold leading-[1.22] tracking-[-0.02em]">A fixed 45-day sequence. Five sessions, each followed by a hands-on activity block, culminating in Demo Day.</h2>
+
+    <div class="mt-14 grid grid-cols-1 gap-5 min-[641px]:grid-cols-2 min-[861px]:grid-cols-3">
+
+      <!-- S1 -->
+      <div class="rounded-2xl border border-[rgba(11,18,32,0.10)] bg-white p-6 transition-transform duration-150 hover:-translate-y-1">
+        <div class="flex items-center justify-between">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-[#2F54EB] font-mono text-[12px] font-bold text-white">S1</span>
+          <span class="font-mono text-[11px] font-semibold text-[#4A5372]">Day 1</span>
+        </div>
+        <h4 class="mt-4 font-space text-[17px] font-bold leading-snug tracking-[-0.02em] text-[#0B1220]">Breaking the Convention</h4><br>
+        <div class="mt-5 flex items-center gap-[10px] rounded-xl bg-[#F5F6FB] px-3 py-[10px]">
+          <span class="shrink-0 rounded-[100px] bg-[#EEF1FE] px-[9px] py-1 font-mono text-[10px] font-semibold text-[#2F54EB]">A1</span>
+          <span class="text-[12.5px] text-[#4A5372]">Day 2–6</span>
+        </div>
+      </div>
+
+      <!-- S2 -->
+      <div class="rounded-2xl border border-[rgba(11,18,32,0.10)] bg-white p-6 transition-transform duration-150 hover:-translate-y-1">
+        <div class="flex items-center justify-between">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-[#2F54EB] font-mono text-[12px] font-bold text-white">S2</span>
+          <span class="font-mono text-[11px] font-semibold text-[#4A5372]">Day 7</span>
+        </div>
+        <h4 class="mt-4 font-space text-[17px] font-bold leading-snug tracking-[-0.02em] text-[#0B1220]">Emerging/Future IT–AI Opportunity Spaces</h4>
+        <div class="mt-5 flex items-center gap-[10px] rounded-xl bg-[#F5F6FB] px-3 py-[10px]">
+          <span class="shrink-0 rounded-[100px] bg-[#EEF1FE] px-[9px] py-1 font-mono text-[10px] font-semibold text-[#2F54EB]">A2</span>
+          <span class="text-[12.5px] text-[#4A5372]">Day 8–12</span>
+        </div>
+      </div>
+
+      <!-- S3 -->
+      <div class="rounded-2xl border border-[rgba(11,18,32,0.10)] bg-white p-6 transition-transform duration-150 hover:-translate-y-1">
+        <div class="flex items-center justify-between">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-[#2F54EB] font-mono text-[12px] font-bold text-white">S3</span>
+          <span class="font-mono text-[11px] font-semibold text-[#4A5372]">Day 13</span>
+        </div>
+        <h4 class="mt-4 font-space text-[17px] font-bold leading-snug tracking-[-0.02em] text-[#0B1220]">Idea Validation Without Building the Product</h4>
+        <div class="mt-5 flex items-center gap-[10px] rounded-xl bg-[#F5F6FB] px-3 py-[10px]">
+          <span class="shrink-0 rounded-[100px] bg-[#EEF1FE] px-[9px] py-1 font-mono text-[10px] font-semibold text-[#2F54EB]">A3</span>
+          <span class="text-[12.5px] text-[#4A5372]">Day 14–20</span>
+        </div>
+      </div>
+
+      <!-- S4 -->
+      <div class="rounded-2xl border border-[rgba(11,18,32,0.10)] bg-white p-6 transition-transform duration-150 hover:-translate-y-1">
+        <div class="flex items-center justify-between">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-[#2F54EB] font-mono text-[12px] font-bold text-white">S4</span>
+          <span class="font-mono text-[11px] font-semibold text-[#4A5372]">Day 22</span>
+        </div>
+        <h4 class="mt-4 font-space text-[17px] font-bold leading-snug tracking-[-0.02em] text-[#0B1220]">How to Build — Team, Patience, Collaboration</h4>
+        <div class="mt-5 flex items-center gap-[10px] rounded-xl bg-[#F5F6FB] px-3 py-[10px]">
+          <span class="shrink-0 rounded-[100px] bg-[#EEF1FE] px-[9px] py-1 font-mono text-[10px] font-semibold text-[#2F54EB]">A4</span>
+          <span class="text-[12.5px] text-[#4A5372]">Day 23 onwards</span>
+        </div>
+      </div>
+
+      <!-- S5 -->
+      <div class="rounded-2xl border border-[rgba(11,18,32,0.10)] bg-white p-6 transition-transform duration-150 hover:-translate-y-1">
+        <div class="flex items-center justify-between">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-[#2F54EB] font-mono text-[12px] font-bold text-white">S5</span>
+          <span class="font-mono text-[11px] font-semibold text-[#4A5372]">Day 30</span>
+        </div>
+        <h4 class="mt-4 font-space text-[17px] font-bold leading-snug tracking-[-0.02em] text-[#0B1220]">Market Reality — Competition &amp; Unfamiliar Terrain</h4>
+        <div class="mt-5 flex items-center gap-[10px] rounded-xl bg-[#F5F6FB] px-3 py-[10px]">
+          <span class="shrink-0 rounded-[100px] bg-[#EEF1FE] px-[9px] py-1 font-mono text-[10px] font-semibold text-[#2F54EB]">A5</span>
+          <span class="text-[12.5px] text-[#4A5372]">Day 31–44</span>
+        </div>
+      </div>
+
+      <!-- filler card: count-to-45 -->
+      <div class="flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#C7D2FB] bg-white p-6 text-center">
+        <b class="font-space text-[32px] font-bold text-[#2F54EB]">45</b>
+        <span class="mt-1 font-mono text-[11px] uppercase tracking-[0.05em] text-[#4A5372]">Days, start to Demo Day</span>
+      </div>
+
+      <!-- DEMO DAY — full width banner -->
+      <div class="flex flex-col items-center justify-between gap-4 rounded-2xl bg-[#0B1130] p-8 min-[641px]:col-span-2 min-[861px]:col-span-3 min-[861px]:flex-row">
+        <div class="flex items-center gap-4">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#FF7A29] font-mono text-[13px] font-bold text-white shadow-[0_4px_14px_rgba(255,122,41,0.4)]">DD</span>
+          <div>
+            <span class="font-mono text-[11px] font-semibold uppercase tracking-[0.05em] text-[#FF7A29]">Day 45</span>
+            <h4 class="font-space text-[19px] font-bold tracking-[-0.02em] text-white">Demo Day</h4>
+          </div>
+        </div>
+        <p class="max-w-[360px] text-center text-[13px] text-white/60 min-[861px]:text-right">Present the concept you've validated over the 45 days.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ======================================================== -->
+<!-- DATES -->
+<!-- ======================================================== -->
+<section id="dates" class="py-[110px]">
+  <div class="mx-auto max-w-[1180px] px-8">
+    <div class="mb-5 flex items-center gap-[10px]">
+      <span class="h-[3px] w-7 rounded-[2px] bg-[#2F54EB]"></span>
+      <span class="font-mono text-[12px] font-semibold uppercase tracking-[0.1em] text-[#4A5372]">KEY DATES</span>
+    </div>
+    <h2 class="max-w-[600px] font-space text-[34px] font-bold leading-[1.22] tracking-[-0.02em]">Cohort timeline.</h2>
+    <div class="h-5"></div>
+    <div class="mb-[46px] flex items-start gap-[10px] rounded-xl bg-[#EEF1FE] px-5 py-4 text-[13px] text-[#2F54EB]">⚠️ Confirm final dates on the official KSUM portal before publishing — shown here as placeholders.</div>
+    <div class="grid grid-cols-2 gap-y-[26px] min-[861px]:grid-cols-5 min-[861px]:gap-y-0">
+      <div class="min-[861px]:pr-6">
+        <span class="mb-[10px] block font-mono text-[11px] uppercase tracking-[0.05em] text-[#4A5372]">Applications open</span>
+        <b class="block font-space text-[17px] text-[#0B1220]">Aug 15, 2026</b>
+      </div>
+      <div class="min-[861px]:border-l min-[861px]:border-[rgba(11,18,32,0.10)] min-[861px]:px-6">
+        <span class="mb-[10px] block font-mono text-[11px] uppercase tracking-[0.05em] text-[#4A5372]">Applications close</span>
+        <b class="block font-space text-[17px] text-[#0B1220]">Aug 31, 2026</b>
+      </div>
+      <!-- <div class="min-[861px]:border-l min-[861px]:border-[rgba(11,18,32,0.10)] min-[861px]:px-6">
+        <span class="mb-[10px] block font-mono text-[11px] uppercase tracking-[0.05em] text-[#4A5372]">Selection results</span>
+        <b class="block font-space text-[17px] text-[#0B1220]">[Results date]</b>
+      </div> -->
+      <div class="min-[861px]:border-l min-[861px]:border-[rgba(11,18,32,0.10)] min-[861px]:px-6">
+        <span class="mb-[10px] block font-mono text-[11px] uppercase tracking-[0.05em] text-[#4A5372]">Cohort kickoff</span>
+        <b class="block font-space text-[17px] text-[#0B1220]">Aug 10, 2026</b>
+      </div>
+      <div class="min-[861px]:border-l min-[861px]:border-[rgba(11,18,32,0.10)] min-[861px]:pl-6">
+        <span class="mb-[10px] block font-mono text-[11px] uppercase tracking-[0.05em] text-[#4A5372]">Demo Day</span>
+        <b class="block font-space text-[17px] text-[#0B1220]">To Be Announced</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- FAQ -->
+<!-- ======================================================== -->
+<section id="faq" class="bg-[#F5F6FB] py-[110px]">
+  <div class="mx-auto max-w-[1180px] px-8">
+    <div class="mb-5 flex items-center gap-[10px]">
+      <span class="h-[3px] w-7 rounded-[2px] bg-[#2F54EB]"></span>
+      <span class="font-mono text-[12px] font-semibold uppercase tracking-[0.1em] text-[#4A5372]">FREQUENTLY ASKED QUESTIONS</span>
+    </div>
+    <h2 class="max-w-[600px] font-space text-[34px] font-bold leading-[1.22] tracking-[-0.02em]">Before you apply.</h2>
+    <div class="h-[14px]"></div>
+    <div class="grid grid-cols-1 gap-x-[60px] min-[861px]:grid-cols-2">
+      <div class="border-t border-[rgba(11,18,32,0.10)] py-[26px]">
+        <span class="mb-2 block font-mono text-[12.5px] text-[#2F54EB]">Q1</span>
+        <h4 class="mb-[10px] text-[16.5px] font-semibold">Do I need a registered company to apply?</h4>
+        <p class="text-[14px] leading-[1.65] text-[#4A5372]">No. SparkX is for ideas at pre-company stage. A validated concept by the end of the program qualifies you for the next stage, not existing incorporation.</p>
+      </div>
+      <div class="border-t border-[rgba(11,18,32,0.10)] py-[26px]">
+        <span class="mb-2 block font-mono text-[12.5px] text-[#2F54EB]">Q2</span>
+        <h4 class="mb-[10px] text-[16.5px] font-semibold">Can I apply as a team?</h4>
+        <p class="text-[14px] leading-[1.65] text-[#4A5372]">Yes. Solo applicants and teams of up to four members are both eligible. Indicate team members on the application form.</p>
+      </div>
+      <div class="border-t border-[rgba(11,18,32,0.10)] py-[26px]">
+        <span class="mb-2 block font-mono text-[12.5px] text-[#2F54EB]">Q3</span>
+        <h4 class="mb-[10px] text-[16.5px] font-semibold">Is there a fee?</h4>
+        <p class="text-[14px] leading-[1.65] text-[#4A5372]">SparkX is free to apply to and free to attend for selected participants.</p>
+      </div>
+      <div class="border-y border-[rgba(11,18,32,0.10)] py-[26px] min-[861px]:border-t">
+        <span class="mb-2 block font-mono text-[12.5px] text-[#2F54EB]">Q4</span>
+        <h4 class="mb-[10px] text-[16.5px] font-semibold">Where are the offline sessions held?</h4>
+        <p class="text-[14px] leading-[1.65] text-[#4A5372]">At a KSUM facility. Exact venue details are confirmed with selected applicants.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- APPLICATION -->
+<!-- ======================================================== -->
+
+
+<!-- ======================================================== -->
+<!-- CTA -->
+<!-- ======================================================== -->
+<section class="relative overflow-hidden bg-[radial-gradient(120%_140%_at_85%_0%,#4A6BF5_0%,#2F54EB_45%,#0B1130_100%)] py-[120px] text-center text-white">
+  <div class="mx-auto max-w-[1180px] px-8">
+    <h2 class="font-space text-[44px] font-bold leading-[1.16] tracking-[-0.02em]">
+      Your idea deserves 45 structured days, not
+      <span class="text-[#FF7A29]">endless maybes.</span>
+    </h2>
+    <p class="mx-auto mb-[34px] mt-[22px] max-w-[460px] font-mono text-[13.5px] text-[rgba(255,255,255,0.65)]">FREE TO APPLY · SOLO OR TEAMS OF 4 · KSUM BACKED</p>
+    <a href="https://zfrmz.com/MwpDRlCKA6wXMiHLkOom" target="_blank"   class="inline-flex cursor-pointer items-center gap-2 rounded-[100px] bg-[#FF7A29] px-7 py-[15px] text-[14.5px] font-semibold text-white shadow-[0_10px_24px_rgba(255,122,41,0.32)] transition-transform duration-150 hover:-translate-y-[2px]">Apply Now</a>
+    <div class="mt-[30px] flex flex-wrap justify-center gap-6 text-[12.5px] text-[rgba(255,255,255,0.65)]">
+      <span><span class="font-bold text-[#FF7A29]">✓</span> No application fee</span>
+      <span><span class="font-bold text-[#FF7A29]">✓</span> Pre-company ideas welcome</span>
+      <span><span class="font-bold text-[#FF7A29]">✓</span> Ends with Demo Day</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== -->
+<!-- FOOTER -->
+<!-- ======================================================== -->
+<footer class="hidden border-t border-[rgba(255,255,255,0.14)] bg-[#0B1130] py-8 text-[rgba(255,255,255,0.5)]">
+  <div class="mx-auto flex max-w-[1180px] flex-wrap items-center justify-between gap-3 px-8">
+    <div class="flex items-center gap-[10px]">
+      <span class="flex h-[30px] w-[30px] items-center justify-center rounded-[8px] bg-[#2F54EB] font-space text-[12px] font-bold text-white">SX</span>
+      <b class="font-space text-[17px] font-bold text-white">SparkX</b>
+      <span class="font-mono text-[11px] text-[rgba(255,255,255,0.5)]">AI &amp; IT</span>
+    </div>
+    <p class="font-mono text-[12px]">A Kerala Startup Mission preincubation program · © 2026 KSUM. All rights reserved.</p>
+  </div>
+</footer>
+
+<footer class="border-t border-white/10  py-8 text-black" id="contact">
+  <div
+    class="mx-auto flex max-w-[1180px] items-center justify-between gap-10 px-8
+           max-[760px]:flex-col max-[760px]:items-start
+           max-[640px]:px-5"
+  >
+    <!-- Left: Organization logo only -->
+    <a
+      href="/"
+      aria-label="Kerala Startup Mission"
+      class="flex shrink-0 items-center"
+    >
+      <img
+        src="/img/logo.svg"
+        alt="Kerala Startup Mission"
+        class="h-20 w-auto object-contain max-[480px]:h-11"
+      />
+    </a>
+
+    <!-- Right section -->
+    <div
+      class="flex items-center gap-12
+             max-[760px]:w-full
+             max-[600px]:flex-col
+             max-[600px]:items-start
+             max-[600px]:gap-6"
+    >
+      <!-- Program details -->
+      <div>
+        <div class="flex items-center gap-[10px]">
+      <b class="font-space text-[17px] font-bold">SparkX</b>
+      <span class="font-mono text-[11px] text-[#4A5372]">AI &amp; IT</span>
+    </div>
+
+      
+      </div>
+
+      <!-- Divider -->
+      <div
+        class="h-14 w-px bg-black/15
+               max-[600px]:hidden"
+      ></div>
+
+      <!-- Point of contact -->
+      <div>
+        <span
+          class="hidden mb-2 block font-['IBM_Plex_Mono'] text-[10px]
+                 font-semibold uppercase tracking-[0.14em]
+                 text-[#F5C518]"
+        >
+          Point of Contact
+        </span>
+
+        <p
+          class="font-['Space_Grotesk'] text-sm
+                 font-semibold text-black"
+        >
+          Hasna Haneef
+        </p>
+
+        <a
+          href="mailto:hasna@startupmission.in"
+          class="mt-1 block font-['IBM_Plex_Mono'] text-[11.5px]
+                 text-black transition-colors hover:text-black"
+        >
+          hasna@startupmission.in
+        </a>
+
+        <a
+          href="tel:08047180470"
+          class="mt-1 block font-['IBM_Plex_Mono'] text-[11.5px]
+                 text-black transition-colors hover:text-black"
+        >
+          08047180470
+        </a>
+
+
+        
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom copyright -->
+  <div class=" grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-auto mt-7 text-center max-w-[1180px] border-t border-black/10 pt-5 max-[640px]:px-5">
+    <div></div>
+    <div class="">
+      <p class="font-['IBM_Plex_Mono'] text-xs text-black">
+      © 2026 <a href="https://startupmission.kerala.gov.in/" target="_blank">Kerala Startup Mission.</a> All rights reserved.
+      </p>
+    </div>
+    <div class="  gap-3 flex md:items-end md:justify-end">
+        <a
+            href="https://www.linkedin.com/company/kerala-startup-mission/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black transition-colors hover:text-[#155dfc]"
+            aria-label="LinkedIn"
+        >
+            <i class="fab fa-linkedin-in text-base"></i>
+        </a>
+
+        <a
+            href="https://www.instagram.com/keralastartupmission/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black transition-colors hover:text-[#155dfc]"
+            aria-label="Instagram"
+        >
+            <i class="fab fa-instagram text-base"></i>
+        </a>
+
+        <a
+            href="https://www.facebook.com/keralastartupmission"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-black transition-colors hover:text-[#155dfc]"
+            aria-label="Facebook"
+        >
+            <i class="fab fa-facebook-f text-base"></i>
+        </a>
+    </div>
+  </div>
+
+</footer>
+
+
+<button
+  id="scrollToTop"
+  type="button"
+  aria-label="Move to top"
+  class="fixed bottom-6 right-6 z-50 flex h-12 w-12 translate-y-4
+         items-center justify-center rounded-full border border-white/20
+         bg-[#155DFC]/90 text-white opacity-0 shadow-[0_12px_30px_rgba(0,0,0,0.25)]
+         backdrop-blur-md transition-all duration-300
+         hover:-translate-y-1 hover:bg-[#0B1220]
+         focus:outline-none focus:ring-2 focus:ring-white/60
+         pointer-events-none"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="h-5 w-5"
+    aria-hidden="true"
+  >
+    <path d="M18 15l-6-6-6 6"></path>
+  </svg>
+</button>
+<script>
+  const scrollToTopButton = document.getElementById("scrollToTop");
+
+  window.addEventListener("scroll", () => {
+    const shouldShow = window.scrollY > 400;
+
+    scrollToTopButton.classList.toggle("opacity-0", !shouldShow);
+    scrollToTopButton.classList.toggle("translate-y-4", !shouldShow);
+    scrollToTopButton.classList.toggle("pointer-events-none", !shouldShow);
+
+    scrollToTopButton.classList.toggle("opacity-100", shouldShow);
+    scrollToTopButton.classList.toggle("translate-y-0", shouldShow);
+    scrollToTopButton.classList.toggle("pointer-events-auto", shouldShow);
+  });
+
+  scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>
+
+
+</body>
+</html>
